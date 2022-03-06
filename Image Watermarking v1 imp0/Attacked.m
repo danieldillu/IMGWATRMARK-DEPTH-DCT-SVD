@@ -165,28 +165,30 @@ for findex=3:HIFitem(1)
         end
     end
 end
-disp('_________________________ENDS___________________________');
+disp('_________________________Writing results to files.___________________________');
 if isWatermarkBinary
-    xlswrite('..\..\..\..\Project Trash\Image Watermarking V1\MSE_Report_of_Attacks_BIN.xlsx',meansVal);
-    disp('MSE Report File: <a href="matlab:winopen(''..\..\..\..\Project Trash\Image Watermarking V1\MSE_Report_of_Attacks_BIN.xlsx'')">MSE_Report_of_Attacks_BIN.xlsx</a>');
-    xlswrite('..\..\..\..\Project Trash\Image Watermarking V1\SSIM_Reprts_of_Attacks_BIN.xlsx',ssimvalwdr);
-    disp('SSIM Report File: <a href="matlab:winopen(''..\..\..\..\Project Trash\Image Watermarking V1\SSIM_Reprts_of_Attacks_BIN.xlsx'')">SSIM_Reprts_of_Attacks_BIN.xlsx</a>');
-    xlswrite('..\..\..\..\Project Trash\Image Watermarking V1\BER_Reprts_of_Attacks_BIN.xlsx',biterValue);
-    disp('BER Report File: <a href="matlab:winopen(''..\..\..\..\Project Trash\Image Watermarking V1\BER_Reprts_of_Attacks_BIN.xlsx'')">BER_Reprts_of_Attacks_BIN.xlsx</a>');
-    xlswrite('..\..\..\..\Project Trash\Image Watermarking V1\MSE_Report_of_Attacks_JPEG_BIN.xlsx',meansValjp);
-    disp('MSE Report of JPEG Attack: <a href="matlab:winopen(''..\..\..\..\Project Trash\Image Watermarking V1\MSE_Report_of_Attacks_JPEG_BIN.xlsx'')">MSE_Report_of_Attacks_JPEG_BIN.xlsx</a>');
-    xlswrite('..\..\..\..\Project Trash\Image Watermarking V1\SSIM_Report_of_Attacks_JPEG_BIN.xlsx',ssimvalwdrjp);
-    disp('SSIM Report of JPEG Attack: <a href="matlab:winopen(''..\..\..\..\Project Trash\Image Watermarking V1\SSIM_Report_of_Attacks_JPEG_BIN.xlsx'')">SSIM_Report_of_Attacks_JPEG_BIN.xlsx</a>');
-    xlswrite('..\..\..\..\Project Trash\Image Watermarking V1\BER_Report_of_Attacks_JPEG_BIN.xlsx',biterValjp);
-    disp('BER Report of JPEG Attack: <a href="matlab:winopen(''..\..\..\..\Project Trash\Image Watermarking V1\BER_Report_of_Attacks_JPEG_BIN.xlsx'')">BER_Report_of_Attacks_JPEG_BIN.xlsx</a>');
+    xlswrite('..\temps\Image Watermarking v1 imp0\MSE_Report_of_Attacks_BIN.xlsx',meansVal);
+    disp('MSE Report File: <a href="matlab:winopen(''..\temps\Image Watermarking v1 imp0\MSE_Report_of_Attacks_BIN.xlsx'')">MSE_Report_of_Attacks_BIN.xlsx</a>');
+    xlswrite('..\temps\Image Watermarking v1 imp0\SSIM_Reprts_of_Attacks_BIN.xlsx',ssimvalwdr);
+    disp('SSIM Report File: <a href="matlab:winopen(''..\temps\Image Watermarking v1 imp0\SSIM_Reprts_of_Attacks_BIN.xlsx'')">SSIM_Reprts_of_Attacks_BIN.xlsx</a>');
+    xlswrite('..\temps\Image Watermarking v1 imp0\BER_Reprts_of_Attacks_BIN.xlsx',biterValue);
+    disp('BER Report File: <a href="matlab:winopen(''..\temps\Image Watermarking v1 imp0\BER_Reprts_of_Attacks_BIN.xlsx'')">BER_Reprts_of_Attacks_BIN.xlsx</a>');
+    xlswrite('..\temps\Image Watermarking v1 imp0\MSE_Report_of_Attacks_JPEG_BIN.xlsx',meansValjp);
+    disp('MSE Report of JPEG Attack: <a href="matlab:winopen(''..\temps\Image Watermarking v1 imp0\MSE_Report_of_Attacks_JPEG_BIN.xlsx'')">MSE_Report_of_Attacks_JPEG_BIN.xlsx</a>');
+    xlswrite('..\temps\Image Watermarking v1 imp0\SSIM_Report_of_Attacks_JPEG_BIN.xlsx',ssimvalwdrjp);
+    disp('SSIM Report of JPEG Attack: <a href="matlab:winopen(''..\temps\Image Watermarking v1 imp0\SSIM_Report_of_Attacks_JPEG_BIN.xlsx'')">SSIM_Report_of_Attacks_JPEG_BIN.xlsx</a>');
+    xlswrite('..\temps\Image Watermarking v1 imp0\BER_Report_of_Attacks_JPEG_BIN.xlsx',biterValjp);
+    disp('BER Report of JPEG Attack: <a href="matlab:winopen(''..\temps\Image Watermarking v1 imp0\BER_Report_of_Attacks_JPEG_BIN.xlsx'')">BER_Report_of_Attacks_JPEG_BIN.xlsx</a>');
 else
-    xlswrite('..\..\..\..\Project Trash\Image Watermarking V1\MSE_Report_of_Attacks.xlsx',meansVal);
-    disp('MSE Report File: <a href="matlab:winopen(''..\..\..\..\Project Trash\Image Watermarking V1\MSE_Report_of_Attacks.xlsx'')">MSE_Report_of_Attacks.xlsx</a>');
-    xlswrite('..\..\..\..\Project Trash\Image Watermarking V1\SSIM_Reprts_of_Attacks.xlsx',ssimvalwdr);
-    disp('SSIM Report File: <a href="matlab:winopen(''..\..\..\..\Project Trash\Image Watermarking V1\SSIM_Reprts_of_Attacks.xlsx'')">SSIM_Reprts_of_Attacks.xlsx</a>');
-    xlswrite('..\..\..\..\Project Trash\Image Watermarking V1\MSE_Report_of_Attacks_JPEG.xlsx',meansValjp);
-    disp('MSE Report of JPEG Attack: <a href="matlab:winopen(''..\..\..\..\Project Trash\Image Watermarking V1\MSE_Report_of_Attacks_JPEG.xlsx'')">MSE_Report_of_Attacks_JPEG.xlsx</a>');
-    xlswrite('..\..\..\..\Project Trash\Image Watermarking V1\SSIM_Report_of_Attacks_JPEG.xlsx',ssimvalwdrjp);
-    disp('SSIM Report of JPEG Attack: <a href="matlab:winopen(''..\..\..\..\Project Trash\Image Watermarking V1\SSIM_Report_of_Attacks_JPEG.xlsx'')">SSIM_Report_of_Attacks_JPEG.xlsx</a>');
+    xlswrite('..\temps\Image Watermarking v1 imp0\MSE_Report_of_Attacks.xlsx',meansVal);
+    disp('MSE Report File: <a href="matlab:winopen(''..\temps\Image Watermarking v1 imp0\MSE_Report_of_Attacks.xlsx'')">MSE_Report_of_Attacks.xlsx</a>');
+    xlswrite('..\temps\Image Watermarking v1 imp0\SSIM_Reprts_of_Attacks.xlsx',ssimvalwdr);
+    disp('SSIM Report File: <a href="matlab:winopen(''..\temps\Image Watermarking v1 imp0\SSIM_Reprts_of_Attacks.xlsx'')">SSIM_Reprts_of_Attacks.xlsx</a>');
+    xlswrite('..\temps\Image Watermarking v1 imp0\MSE_Report_of_Attacks_JPEG.xlsx',meansValjp);
+    disp('MSE Report of JPEG Attack: <a href="matlab:winopen(''..\temps\Image Watermarking v1 imp0\MSE_Report_of_Attacks_JPEG.xlsx'')">MSE_Report_of_Attacks_JPEG.xlsx</a>');
+    xlswrite('..\temps\Image Watermarking v1 imp0\SSIM_Report_of_Attacks_JPEG.xlsx',ssimvalwdrjp);
+    disp('SSIM Report of JPEG Attack: <a href="matlab:winopen(''..\temps\Image Watermarking v1 imp0\SSIM_Report_of_Attacks_JPEG.xlsx'')">SSIM_Report_of_Attacks_JPEG.xlsx</a>');
 end
+
+disp('______________________Thanks, that is all. Execution ended.________________________');
 toc
