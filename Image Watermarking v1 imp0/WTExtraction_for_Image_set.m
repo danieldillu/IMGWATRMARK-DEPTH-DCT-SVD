@@ -50,8 +50,9 @@ for findex=3:HIFitem(1)
             %             testModuleExtrn2;
             %             figure,imshow(recoveredWImage,[]);
             
-            tiff_writer(recoveredWImage,strcat(partialOutputURL,'\EXTW\Ext_',hname,'.tif'));
-            disp(strcat('   -Extracted Watermark: <a href="matlab:tiffViewer(strcat(partialOutputURL,''\EXTW\Ext_',hname,'.tif''))" >Ext_',hname,'.tif</a>'));
+            outputlink = strcat(partialOutputURL,'\EXTW\Ext_',hname,'.tif');
+            tiff_writer(recoveredWImage,outputlink);
+            disp(strcat('   -Extracted Watermark: <a href="matlab:tiffViewer(outputlink)" >Ext_',hname,'.tif</a>'));
             if isWatermarkBinary
                 [ssimvalwdr(pk,2),~]=ssim(double(recoveredWImage),double(im2bw(imresize(watrmarkImg,size(recoveredWImage)),graythresh(imresize(watrmarkImg,size(recoveredWImage))))));
                 disp(strcat(' SSIM Value is:',num2str(ssimvalwdr(pk,2))));
